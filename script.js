@@ -12,7 +12,7 @@ var numbers = "1234567890";
   numbers = numbers.split("");
 
 function generatePassword() {
-  var charecterPool = [];
+  var characterPool = [];
   var password = [];
 
   window.alert("HI! Lets make a password");
@@ -48,23 +48,23 @@ function generatePassword() {
   }
 
   if (addUpperCase) {
-    charecterPool = charecterPool.concat(upperCase);
+    characterPool = characterPool.concat(upperCase);
   }
   if (addLowerCase) {
-    charecterPool = charecterPool.concat(lowerCase);
+    characterPool = characterPool.concat(lowerCase);
   }
   if (addSpecialChar) {
-    charecterPool = charecterPool.concat(specialChars);
+    characterPool = characterPool.concat(specialChars);
   }
   if (addNumbers) {
-    charecterPool = charecterPool.concat(numbers);
+    characterPool = characterPool.concat(numbers);
   }
-  console.log(charecterPool);
+  console.log(characterPool);
 
   //make randomizer equation then put in function
   for (var i = 0; i < userInput; i++) {
-    var randomIndex = Math.floor(Math.random() * charecterPool.length);
-    var indexValue = charecterPool[randomIndex];
+    var randomIndex = Math.floor(Math.random() * characterPool.length);
+    var indexValue = characterPool[randomIndex];
     password.push(indexValue);
   }
   return password.join("");
