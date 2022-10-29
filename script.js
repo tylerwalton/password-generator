@@ -17,7 +17,7 @@ function generatePassword() {
 
   window.alert("HI! Lets make a password");
 
-  var userInput = prompt("How many charecters would you like to add?");
+  var userInput = prompt("How many characters would you like to add?");
   var passwordLength = parseInt(userInput);
   if (userInput === null) {
     return;
@@ -38,12 +38,12 @@ function generatePassword() {
   var addLowerCase = window.confirm(
     "Would you like to add lower case letters?"
   );
-  var addSpecialChar = window.confirm("How about some special charecters?");
+  var addSpecialChar = window.confirm("How about some special characters?");
   var addNumbers = window.confirm(
     "Lastly, would you like to add some numbers?"
   );
   if (!addUpperCase && !addLowerCase && !addSpecialChar && !addNumbers) {
-    alert("You must choose at least one charecter type.");
+    alert("You must choose at least one character type.");
     generatePassword();
   }
 
