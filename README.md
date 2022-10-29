@@ -4,7 +4,7 @@ This weeks challenge focused on our newly found skills in Javascript. This requi
 ## Deployed Webpage
 [Click me to go to see my password generator!](https://tylerwalton.github.io/password-generator/)
 
-## <u?>**Motivation**</u>
+## <u>**Motivation**</u>
 Here is a list of my motivations for this project!
 
 - learn how to properly use a "for loop" to truely randomize a password based on its inputs
